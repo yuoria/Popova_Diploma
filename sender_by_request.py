@@ -4,7 +4,7 @@ import data
 
 
 # Автотест
-def test_order_creation_and_retrieval():
+def test_order_creation_and_get_by_track():
     response = functions.create_order(data.order_body)
 
     track_number = response.json()["track"]
